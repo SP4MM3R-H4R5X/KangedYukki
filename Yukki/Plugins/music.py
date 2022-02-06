@@ -568,7 +568,7 @@ async def popat(_, CallbackQuery):
         return
 
 
-@Client.on_message(command(["playplaylist", "playplaylist@VeezMegaBot"]) & other_filters)
+@Client.on_message(command(["playplaylist", "playplaylist@Magician_music_bot"]) & other_filters)
 async def play_playlist_cmd(_, message):
     thumb ="cache/playlist.png"
     user_id = message.from_user.id
