@@ -60,12 +60,12 @@ def convert_seconds(seconds):
     return "%02d:%02d" % (minutes, seconds)
 
 
-@Client.on_message(command(["play", "play@VeezMegaBot"]) & other_filters)
+@Client.on_message(command(["play", "play@Magician_music_bot"]) & other_filters)
 async def play(_, message: Message):
     await message.delete()
     chat_id = message.chat.id
     if not await is_served_chat(chat_id):
-        await message.reply_text(f"❌ **not in allowed chat**\n\nveez mega is only for allowed chats. ask any sudo user to allow your chat.\n\ncheck sudo user list [From Here](https://t.me/{BOT_USERNAME}?start=sudolist)")
+        await message.reply_text(f"❌ **not in allowed chat**\n\nHarsh X Music is only for allowed chats. ask any sudo user to allow your chat.\n\ncheck sudo user list [From Here](https://t.me/{BOT_USERNAME}?start=sudolist)")
         return await app.leave_chat(chat_id)  
     if message.sender_chat:
         return await message.reply_text("you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")  
