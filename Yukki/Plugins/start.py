@@ -85,7 +85,7 @@ async def play(_, message: Message):
         user_name = message.from_user.first_name
         rpk = "["+user_name+"](tg://user?id="+str(user_id)+")" 
         await app.send_message(message.chat.id,
-            text=f"✨ Welcome {rpk} !\n\n💭 [Harsh X Music](https://t.me/magician_music_bot) **allows** you to **play music** on **Groups** through the new **Telegram's video chats**,
+            text=f"✨ Welcome {rpk} !\n\n💭 [Harsh X Music](https://t.me/magician_music_bot) **allows** you to **play music** on **Groups** through the new **Telegram's video chats** new feature introduced by telegram ,
             parse_mode="markdown",
             reply_markup=pstart_markup,
             reply_to_message_id=message.message_id,
